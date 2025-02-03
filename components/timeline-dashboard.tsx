@@ -12,7 +12,7 @@ import {
 } from "date-fns"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar"
-import { Button } from "@/components/ui/button"
+import { Button } from "../components/ui/button"
 import { useTaskStore } from "../store/use-task-store"
 import type { Task } from "../lib/types"
 
