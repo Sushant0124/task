@@ -1,11 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import { useTaskStore } from "@/store/use-task-store"
+import { useTaskStore } from "../store/use-task-store"
 import  {TaskDialog}  from "./task-dialog"
-import { Button } from "@/components/ui/button"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import type { Task } from "@/lib/types"
+import { Button } from "../components/ui/button"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../components/ui/table"
+import type { Task } from "../lib/types"
 
 export function TaskList() {
   const tasks = useTaskStore((state) => state.tasks)

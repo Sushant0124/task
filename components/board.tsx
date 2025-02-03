@@ -1,8 +1,8 @@
 import { useMemo, useCallback } from "react"
 import { DndContext, type DragEndEvent, closestCenter } from "@dnd-kit/core"
-import { useTaskStore } from "@/store/use-task-store"
+import { useTaskStore } from "../store/use-task-store"
 import { TaskColumn } from "./task-column"
-import type { Task } from "@/lib/types"
+import type { Task } from "../lib/types"
 
 const columns: { id: Task["status"]; title: string }[] = [
   { id: "todo", title: "To Do" },

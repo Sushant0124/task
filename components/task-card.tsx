@@ -2,21 +2,21 @@
 
 import { useState } from "react"
 import { format } from "date-fns"
-import type { Task } from "@/lib/types"
-import { useTaskStore } from "@/store/use-task-store"
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import type { Task } from "../lib/types"
+import { useTaskStore } from "../store/use-task-store"
+import { Card, CardContent, CardFooter, CardHeader } from "../components/ui/card"
+import { Badge } from "../components/ui/badge"
+import { Button } from "../components/ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { Textarea } from "@/components/ui/textarea"
+} from "../components/ui/dropdown-menu"
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "../components/ui/dialog"
+import { Textarea } from "../components/ui/textarea"
 import { Calendar, MoreVertical, MessageSquare, Paperclip, Tag } from "lucide-react"
 
 interface TaskCardProps {
