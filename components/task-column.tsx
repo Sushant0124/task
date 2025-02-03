@@ -1,13 +1,11 @@
-"use client"
-
 import { useDroppable } from "@dnd-kit/core"
 import { SortableContext, verticalListSortingStrategy } from "@dnd-kit/sortable"
 import { TaskCard } from "./task-card"
-import type { Task } from "@/lib/types"
+import type { Task, Status } from "@/lib/types"
 import { memo } from "react"
 
 interface TaskColumnProps {
-  id: string
+  id: Status
   title: string
   tasks: Task[]
 }

@@ -154,4 +154,3 @@ export function TaskCard({ task, onEdit }: TaskCardProps) {
     </>
   )
 }
-

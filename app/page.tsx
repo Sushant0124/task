@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Board } from "@/components/board"
-import { TaskFilters } from "@/components/task-filters"
+// import { TaskFilters } from "@/components/task-filters"
 import {TimelineDashboard} from "@/components/timeline-dashboard"
 import { TaskList } from "@/components/task-list"
 import { Button } from "@/components/ui/button"
@@ -26,11 +26,10 @@ export default function Home() {
           </Button>
         </div>
       </div>
-      <TaskFilters />
+{/*       <TaskFilters /> */}
       {view === "board" && <Board />}
       {view === "timeline" && <TimelineDashboard />}
       {view === "list" && <TaskList />}
     </main>
   )
 }
-
