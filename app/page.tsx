@@ -1,11 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import { Board } from "@/components/board"
+import { Board } from "../components/board"
 // import { TaskFilters } from "@/components/task-filters"
-import {TimelineDashboard} from "@/components/timeline-dashboard"
-import { TaskList } from "@/components/task-list"
-import { Button } from "@/components/ui/button"
+import {TimelineDashboard} from "../components/timeline-dashboard"
+import { TaskList } from "../components/task-list"
+import { Button } from "../components/ui/button"
 
 export default function Home() {
   const [view, setView] = useState<"board" | "timeline" | "list">("board")
