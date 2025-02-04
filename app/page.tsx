@@ -26,7 +26,7 @@ export default function Home() {
           </Button>
         </div>
       </div>
-{/*       <TaskFilters /> */}
+      {/* //<TaskFilters /> */}
       {view === "board" && <Board />}
       {view === "timeline" && <TimelineDashboard />}
       {view === "list" && <TaskList />}
